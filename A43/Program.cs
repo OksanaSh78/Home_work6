@@ -10,7 +10,8 @@ using static System.Console;
 
 printResult(askNumbers());
 
-int[] askNumbers() {
+int[] askNumbers() 
+{
     Write("Введите b1, k1, b2, k2: ");
     return ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
 }
